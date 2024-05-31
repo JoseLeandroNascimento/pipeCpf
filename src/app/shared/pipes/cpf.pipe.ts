@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CpfPipe implements PipeTransform {
 
-  transform(value: string): unknown {
+  transform(value: string): string {
 
     let valueTranform = value.replace(/\D/g, '')
     let mascara = /^(\d{3})(\d{3})(\d{3})(\d{2})$/
